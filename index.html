@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+    <title>Contact Popup</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="ARAHMANS" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="css/select2.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/chatBot.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Chat bot UI start -->
+<div class="chat-screen">
+    <div class="chat-header">
+        <div class="chat-header-title">
+            Contact Us
+        </div>
+    </div>
+    <div class="chat-mail">
+        <form action="" method="">
+            <div class="row">
+                <div class="col-md-12 text-center mb-2">
+                    <p>Hi 👋, Is there anything we can help you with, please leave your message:)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Yourname">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Youremail@example.com">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" name="subject" class="form-control" placeholder="subject">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Messages" value="" ></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn btn-primary btn-rounded btn-block">SUBMIT</button>
+                </div>
+               <div class="col-md-12">
+                   <div class="powered-by">© Copyright 2022 ARAHMANS. All Rights Reserve</div>
+               </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="chat-bot-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square animate"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x "><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+</div>
+<!-- Time line Html Ends -->
+<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+ <script>
+        $(document).ready(function(){
+            $(".select2_el").select2({
+            });
+        });
+        </script>
+<script>
+    $(document).ready(function () {
+        //Toggle fullscreen
+        $(".chat-bot-icon").click(function (e) {
+            $(this).children('img').toggleClass('hide');
+            $(this).children('svg').toggleClass('animate');
+            $('.chat-screen').toggleClass('show-chat');
+        });
+    });
+
+</script>
+</body>
+
+</html>
